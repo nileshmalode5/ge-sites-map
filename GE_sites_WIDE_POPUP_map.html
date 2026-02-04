@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e0fe7d095b2849613420466d1bd08e2b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e0fe7d095b2849613420466d1bd08e2b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e0fe7d095b2849613420466d1bd08e2b = L.map(
+                "map_e0fe7d095b2849613420466d1bd08e2b",
+                {
+                    center: [57.23487328301888, -3.160441641509434],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f40ec96a6a28dab39f73f90e91bb328 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+            var circle_marker_b4aaa45daf724f0ff8adb7a0da650b35 = L.circleMarker(
+                [57.161928, -2.11698],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_418a4d2c06d98dd356576f575b4a4b34 = L.popup({"maxWidth": 380});
+
+        
+            var html_c7cc138f670626962146979c3c165f20 = $(`<div id="html_c7cc138f670626962146979c3c165f20" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Kitty Brewster       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">1</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">961</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">2385</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">0.806053936</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.161928 | Lon: -2.11698       </div>     </div>     </div>`)[0];
+            popup_418a4d2c06d98dd356576f575b4a4b34.setContent(html_c7cc138f670626962146979c3c165f20);
+        
+
+        circle_marker_b4aaa45daf724f0ff8adb7a0da650b35.bindPopup(popup_418a4d2c06d98dd356576f575b4a4b34)
+        ;
+
+        
+    
+    
+            circle_marker_b4aaa45daf724f0ff8adb7a0da650b35.bindTooltip(
+                `<div>
+                     Kitty Brewster
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_01455e04edc5a8de07fc2903d0a3c790 = L.circleMarker(
+                [57.070045, -4.102611],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_90982536aa87d39021e8b03d35237a34 = L.popup({"maxWidth": 380});
+
+        
+            var html_65873f8ee85b7ab529bd2d0c13a13134 = $(`<div id="html_65873f8ee85b7ab529bd2d0c13a13134" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Highland Folk Museum, HFM Newtonmore       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">2</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">182</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">21</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.729231088</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.070045 | Lon: -4.102611       </div>     </div>     </div>`)[0];
+            popup_90982536aa87d39021e8b03d35237a34.setContent(html_65873f8ee85b7ab529bd2d0c13a13134);
+        
+
+        circle_marker_01455e04edc5a8de07fc2903d0a3c790.bindPopup(popup_90982536aa87d39021e8b03d35237a34)
+        ;
+
+        
+    
+    
+            circle_marker_01455e04edc5a8de07fc2903d0a3c790.bindTooltip(
+                `<div>
+                     Highland Folk Museum, HFM Newtonmore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_29f5e351f89d78ad4f4bb7577dbcd6c4 = L.circleMarker(
+                [57.19238, -2.213017],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_1d8ac5ab33b981ed9ebb5417cf775fd8 = L.popup({"maxWidth": 380});
+
+        
+            var html_90d9c4e1a5e1ff57a3178cb3ab0cf099 = $(`<div id="html_90d9c4e1a5e1ff57a3178cb3ab0cf099" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         North Western Hub - Upscale Craibstone Park and Ride       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">3</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">3284</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">1899</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.039595146</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.187266298</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.19238 | Lon: -2.213017       </div>     </div>     </div>`)[0];
+            popup_1d8ac5ab33b981ed9ebb5417cf775fd8.setContent(html_90d9c4e1a5e1ff57a3178cb3ab0cf099);
+        
+
+        circle_marker_29f5e351f89d78ad4f4bb7577dbcd6c4.bindPopup(popup_1d8ac5ab33b981ed9ebb5417cf775fd8)
+        ;
+
+        
+    
+    
+            circle_marker_29f5e351f89d78ad4f4bb7577dbcd6c4.bindTooltip(
+                `<div>
+                     North Western Hub - Upscale Craibstone Park and Ride
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d753698e65087bfe73bc2b6e683d75d3 = L.circleMarker(
+                [57.132906, -2.108718],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_c985997dec128cbe23ebe5e7b643f782 = L.popup({"maxWidth": 380});
+
+        
+            var html_7212a0ba67a71693686dd7bda2b1911e = $(`<div id="html_7212a0ba67a71693686dd7bda2b1911e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         King George VI Bridge       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">4</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">991</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">2378</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">0.597226</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.483837898</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.132906 | Lon: -2.108718       </div>     </div>     </div>`)[0];
+            popup_c985997dec128cbe23ebe5e7b643f782.setContent(html_7212a0ba67a71693686dd7bda2b1911e);
+        
+
+        circle_marker_d753698e65087bfe73bc2b6e683d75d3.bindPopup(popup_c985997dec128cbe23ebe5e7b643f782)
+        ;
+
+        
+    
+    
+            circle_marker_d753698e65087bfe73bc2b6e683d75d3.bindTooltip(
+                `<div>
+                     King George VI Bridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f8402f62a2f1074fa343012afe876b65 = L.circleMarker(
+                [57.178284, -2.175872],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_2500abfdb483aabb32d29b9f7fbcb2fc = L.popup({"maxWidth": 380});
+
+        
+            var html_de390016b242ba524d2305c5ce63f05f = $(`<div id="html_de390016b242ba524d2305c5ce63f05f" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Bucksburn       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">5</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1067</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">956</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.06876653</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.791621938</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.248767344</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.178284 | Lon: -2.175872       </div>     </div>     </div>`)[0];
+            popup_2500abfdb483aabb32d29b9f7fbcb2fc.setContent(html_de390016b242ba524d2305c5ce63f05f);
+        
+
+        circle_marker_f8402f62a2f1074fa343012afe876b65.bindPopup(popup_2500abfdb483aabb32d29b9f7fbcb2fc)
+        ;
+
+        
+    
+    
+            circle_marker_f8402f62a2f1074fa343012afe876b65.bindTooltip(
+                `<div>
+                     Bucksburn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_611ccd28ca406ce63023ba87e3331e83 = L.circleMarker(
+                [57.148742, -2.106487],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_9a320f08e905b31a7d3eb9c23f6cb253 = L.popup({"maxWidth": 380});
+
+        
+            var html_88782ae483194ed7b998771c4692b29c = $(`<div id="html_88782ae483194ed7b998771c4692b29c" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Central hub - Denburn and West North Street Car Parks       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">6</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1028</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">2493</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">0.503682576</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-1.686876392</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.148742 | Lon: -2.106487       </div>     </div>     </div>`)[0];
+            popup_9a320f08e905b31a7d3eb9c23f6cb253.setContent(html_88782ae483194ed7b998771c4692b29c);
+        
+
+        circle_marker_611ccd28ca406ce63023ba87e3331e83.bindPopup(popup_9a320f08e905b31a7d3eb9c23f6cb253)
+        ;
+
+        
+    
+    
+            circle_marker_611ccd28ca406ce63023ba87e3331e83.bindTooltip(
+                `<div>
+                     Central hub - Denburn and West North Street Car Parks
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d57fe4e32199ceada76329e3c7eac51d = L.circleMarker(
+                [57.413496, -6.202968],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_c209c0f782fbe2dc59f494a9e0bfc7b9 = L.popup({"maxWidth": 380});
+
+        
+            var html_447b938721d1a5e09d55aad6197935e2 = $(`<div id="html_447b938721d1a5e09d55aad6197935e2" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Fingal Centre       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">7</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">127</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">17</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.125317915</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.053389388</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.413496 | Lon: -6.202968       </div>     </div>     </div>`)[0];
+            popup_c209c0f782fbe2dc59f494a9e0bfc7b9.setContent(html_447b938721d1a5e09d55aad6197935e2);
+        
+
+        circle_marker_d57fe4e32199ceada76329e3c7eac51d.bindPopup(popup_c209c0f782fbe2dc59f494a9e0bfc7b9)
+        ;
+
+        
+    
+    
+            circle_marker_d57fe4e32199ceada76329e3c7eac51d.bindTooltip(
+                `<div>
+                     Fingal Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_10c717cb6024c1170ed2fefb7289e058 = L.circleMarker(
+                [57.483522, -4.459977],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_2b9aafa6141528e80c2d2dbeff7fad35 = L.popup({"maxWidth": 380});
+
+        
+            var html_d9189cd22d24bedbc322ad645609097c = $(`<div id="html_d9189cd22d24bedbc322ad645609097c" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Beauly Square Car Park       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">8</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">4252</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">211</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.539562242</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.483522 | Lon: -4.459977       </div>     </div>     </div>`)[0];
+            popup_2b9aafa6141528e80c2d2dbeff7fad35.setContent(html_d9189cd22d24bedbc322ad645609097c);
+        
+
+        circle_marker_10c717cb6024c1170ed2fefb7289e058.bindPopup(popup_2b9aafa6141528e80c2d2dbeff7fad35)
+        ;
+
+        
+    
+    
+            circle_marker_10c717cb6024c1170ed2fefb7289e058.bindTooltip(
+                `<div>
+                     Beauly Square Car Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8daea907a762d6f6a03bd400ae3b566c = L.circleMarker(
+                [57.499411, -6.15818],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_2c54347e645bc2c9bcb740b7752fe532 = L.popup({"maxWidth": 380});
+
+        
+            var html_181d80c5f1dd71fc43847db9d33a7cb2 = $(`<div id="html_181d80c5f1dd71fc43847db9d33a7cb2" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Old Man of Storr       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">9</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">131</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">17</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">0.817732702</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.499411 | Lon: -6.15818       </div>     </div>     </div>`)[0];
+            popup_2c54347e645bc2c9bcb740b7752fe532.setContent(html_181d80c5f1dd71fc43847db9d33a7cb2);
+        
+
+        circle_marker_8daea907a762d6f6a03bd400ae3b566c.bindPopup(popup_2c54347e645bc2c9bcb740b7752fe532)
+        ;
+
+        
+    
+    
+            circle_marker_8daea907a762d6f6a03bd400ae3b566c.bindTooltip(
+                `<div>
+                     Old Man of Storr
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_39d070ff1b6c6ec6cb25afeb2ba367c8 = L.circleMarker(
+                [57.504885, -1.788943],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_017ce5648d9395249b68d287a8581de3 = L.popup({"maxWidth": 380});
+
+        
+            var html_b4bb7934ddb24b2753c85ffb2f6ed308 = $(`<div id="html_b4bb7934ddb24b2753c85ffb2f6ed308" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Peterhead       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">10</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1189</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">302</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.056232458</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.107477665</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.504885 | Lon: -1.788943       </div>     </div>     </div>`)[0];
+            popup_017ce5648d9395249b68d287a8581de3.setContent(html_b4bb7934ddb24b2753c85ffb2f6ed308);
+        
+
+        circle_marker_39d070ff1b6c6ec6cb25afeb2ba367c8.bindPopup(popup_017ce5648d9395249b68d287a8581de3)
+        ;
+
+        
+    
+    
+            circle_marker_39d070ff1b6c6ec6cb25afeb2ba367c8.bindTooltip(
+                `<div>
+                     Peterhead
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_42e75fcca03910fe7d53bcb63c093899 = L.circleMarker(
+                [57.127572, -2.090609],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_284dac5e74cac7b6bc75c10f54b34384 = L.popup({"maxWidth": 380});
+
+        
+            var html_63383509cc92b9ca4cde7202cbb2e920 = $(`<div id="html_63383509cc92b9ca4cde7202cbb2e920" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Tullos       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">11</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1353</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">3605</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">0.85106575</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-0.612890271</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.127572 | Lon: -2.090609       </div>     </div>     </div>`)[0];
+            popup_284dac5e74cac7b6bc75c10f54b34384.setContent(html_63383509cc92b9ca4cde7202cbb2e920);
+        
+
+        circle_marker_42e75fcca03910fe7d53bcb63c093899.bindPopup(popup_284dac5e74cac7b6bc75c10f54b34384)
+        ;
+
+        
+    
+    
+            circle_marker_42e75fcca03910fe7d53bcb63c093899.bindTooltip(
+                `<div>
+                     Tullos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bbbc4718f46e2b1d8f65ae56e5957cf7 = L.circleMarker(
+                [57.163773, -2.093227],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_ae6ce9bb2fdd704e32485ea1e751219e = L.popup({"maxWidth": 380});
+
+        
+            var html_4dd0c81ab733f63beff293e8c5a45a95 = $(`<div id="html_4dd0c81ab733f63beff293e8c5a45a95" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Aberdeen Sports Village       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">12</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1016</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">2926</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.779947735</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.17448663</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.163773 | Lon: -2.093227       </div>     </div>     </div>`)[0];
+            popup_ae6ce9bb2fdd704e32485ea1e751219e.setContent(html_4dd0c81ab733f63beff293e8c5a45a95);
+        
+
+        circle_marker_bbbc4718f46e2b1d8f65ae56e5957cf7.bindPopup(popup_ae6ce9bb2fdd704e32485ea1e751219e)
+        ;
+
+        
+    
+    
+            circle_marker_bbbc4718f46e2b1d8f65ae56e5957cf7.bindTooltip(
+                `<div>
+                     Aberdeen Sports Village
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_949a05be2b4b04de17633fae188a6e40 = L.circleMarker(
+                [57.36459, -2.072856],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_4d5f152494ce472b12d773a4a576fa74 = L.popup({"maxWidth": 380});
+
+        
+            var html_427bb8fc44bb7103f6c4f3f64d7089ba = $(`<div id="html_427bb8fc44bb7103f6c4f3f64d7089ba" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Ellon       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">13</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">464</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">162</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">0.911036318</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-0.159034381</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.36459 | Lon: -2.072856       </div>     </div>     </div>`)[0];
+            popup_4d5f152494ce472b12d773a4a576fa74.setContent(html_427bb8fc44bb7103f6c4f3f64d7089ba);
+        
+
+        circle_marker_949a05be2b4b04de17633fae188a6e40.bindPopup(popup_4d5f152494ce472b12d773a4a576fa74)
+        ;
+
+        
+    
+    
+            circle_marker_949a05be2b4b04de17633fae188a6e40.bindTooltip(
+                `<div>
+                     Ellon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8ef94bef218ee74c9af829882b939714 = L.circleMarker(
+                [57.681089, -2.004558],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_6951f77d67da13c97bd713ee0ae63c55 = L.popup({"maxWidth": 380});
+
+        
+            var html_bb50924e328893371b2080f8d7f73254 = $(`<div id="html_bb50924e328893371b2080f8d7f73254" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#2ecc71;margin-bottom:8px;">         Fraserburgh       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">High</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#2ecc71;">14</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">168</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">206</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.34833468</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.232469291</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.562583017</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.681089 | Lon: -2.004558       </div>     </div>     </div>`)[0];
+            popup_6951f77d67da13c97bd713ee0ae63c55.setContent(html_bb50924e328893371b2080f8d7f73254);
+        
+
+        circle_marker_8ef94bef218ee74c9af829882b939714.bindPopup(popup_6951f77d67da13c97bd713ee0ae63c55)
+        ;
+
+        
+    
+    
+            circle_marker_8ef94bef218ee74c9af829882b939714.bindTooltip(
+                `<div>
+                     Fraserburgh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_70b90d219389741b0d99d12ec317b29c = L.circleMarker(
+                [56.846009, -5.095524],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_a615cf775fc4f6e4bba8a5d35dbb5f3a = L.popup({"maxWidth": 380});
+
+        
+            var html_943f0ccbd298fed1743023ee73be32fa = $(`<div id="html_943f0ccbd298fed1743023ee73be32fa" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Car Park at the Moorings Hotel, Banavie (Scottish Canals land)       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">15</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">238</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">100</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">0.471793216</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 56.846009 | Lon: -5.095524       </div>     </div>     </div>`)[0];
+            popup_a615cf775fc4f6e4bba8a5d35dbb5f3a.setContent(html_943f0ccbd298fed1743023ee73be32fa);
+        
+
+        circle_marker_70b90d219389741b0d99d12ec317b29c.bindPopup(popup_a615cf775fc4f6e4bba8a5d35dbb5f3a)
+        ;
+
+        
+    
+    
+            circle_marker_70b90d219389741b0d99d12ec317b29c.bindTooltip(
+                `<div>
+                     Car Park at the Moorings Hotel, Banavie (Scottish Canals land)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7e705fec8903946b0d3928e215df4e2d = L.circleMarker(
+                [57.164786, -2.101462],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_8eb90c873d95c7e9e01dddbb158cd10c = L.popup({"maxWidth": 380});
+
+        
+            var html_6688d37e5ff9aaf49ecd891ed50d3465 = $(`<div id="html_6688d37e5ff9aaf49ecd891ed50d3465" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         University of Aberdeen       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">16</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1012</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">3504</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.839181785</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.117884096</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-0.137041339</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.164786 | Lon: -2.101462       </div>     </div>     </div>`)[0];
+            popup_8eb90c873d95c7e9e01dddbb158cd10c.setContent(html_6688d37e5ff9aaf49ecd891ed50d3465);
+        
+
+        circle_marker_7e705fec8903946b0d3928e215df4e2d.bindPopup(popup_8eb90c873d95c7e9e01dddbb158cd10c)
+        ;
+
+        
+    
+    
+            circle_marker_7e705fec8903946b0d3928e215df4e2d.bindTooltip(
+                `<div>
+                     University of Aberdeen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3977827577e1b28612bc4efaa3164a9f = L.circleMarker(
+                [56.721273, -5.235157],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_024a1611b3858e2546b9e8669824606c = L.popup({"maxWidth": 380});
+
+        
+            var html_523830522af907e8be43e8f2c198472a = $(`<div id="html_523830522af907e8be43e8f2c198472a" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Corran Ferry, Corran       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">17</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">654</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">12</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.231295122</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.363440178</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.703455101</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 56.721273 | Lon: -5.235157       </div>     </div>     </div>`)[0];
+            popup_024a1611b3858e2546b9e8669824606c.setContent(html_523830522af907e8be43e8f2c198472a);
+        
+
+        circle_marker_3977827577e1b28612bc4efaa3164a9f.bindPopup(popup_024a1611b3858e2546b9e8669824606c)
+        ;
+
+        
+    
+    
+            circle_marker_3977827577e1b28612bc4efaa3164a9f.bindTooltip(
+                `<div>
+                     Corran Ferry, Corran
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_516e4bf49a167cfc39f99f93b4d84344 = L.circleMarker(
+                [56.969666, -2.205999],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_3679a9ec83c53b36183fc4e9c8d2dffe = L.popup({"maxWidth": 380});
+
+        
+            var html_c067f9b735a7022e11175b69edddd1a7 = $(`<div id="html_c067f9b735a7022e11175b69edddd1a7" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Stonehaven Leisure Centre       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">18</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">4964</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">280</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.192829051</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.111737013</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.829748783</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 56.969666 | Lon: -2.205999       </div>     </div>     </div>`)[0];
+            popup_3679a9ec83c53b36183fc4e9c8d2dffe.setContent(html_c067f9b735a7022e11175b69edddd1a7);
+        
+
+        circle_marker_516e4bf49a167cfc39f99f93b4d84344.bindPopup(popup_3679a9ec83c53b36183fc4e9c8d2dffe)
+        ;
+
+        
+    
+    
+            circle_marker_516e4bf49a167cfc39f99f93b4d84344.bindTooltip(
+                `<div>
+                     Stonehaven Leisure Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1537921aa695698fe1b806827583d829 = L.circleMarker(
+                [57.651225, -3.316833],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_5e475829e98143598cc89135018b2db3 = L.popup({"maxWidth": 380});
+
+        
+            var html_fd2b7bc9c71459852ddb29a010e0f36f = $(`<div id="html_fd2b7bc9c71459852ddb29a010e0f36f" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Lossie Green, Elgin       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Moray</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">19</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">866</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">474</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">0.657221614</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.215171742</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-1.090662451</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.651225 | Lon: -3.316833       </div>     </div>     </div>`)[0];
+            popup_5e475829e98143598cc89135018b2db3.setContent(html_fd2b7bc9c71459852ddb29a010e0f36f);
+        
+
+        circle_marker_1537921aa695698fe1b806827583d829.bindPopup(popup_5e475829e98143598cc89135018b2db3)
+        ;
+
+        
+    
+    
+            circle_marker_1537921aa695698fe1b806827583d829.bindTooltip(
+                `<div>
+                     Lossie Green, Elgin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_771a4240b6138b5911b2013ab7933485 = L.circleMarker(
+                [57.463232, -4.245657],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_10e2334edd3d97a0aac1957cbe2c6ae0 = L.popup({"maxWidth": 380});
+
+        
+            var html_7740d445b7410d92ec6db89a86d5c43a = $(`<div id="html_7740d445b7410d92ec6db89a86d5c43a" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Torvean Car Park, Inverness       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">20</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1128</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">823</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.155602277</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.764306893</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.463232 | Lon: -4.245657       </div>     </div>     </div>`)[0];
+            popup_10e2334edd3d97a0aac1957cbe2c6ae0.setContent(html_7740d445b7410d92ec6db89a86d5c43a);
+        
+
+        circle_marker_771a4240b6138b5911b2013ab7933485.bindPopup(popup_10e2334edd3d97a0aac1957cbe2c6ae0)
+        ;
+
+        
+    
+    
+            circle_marker_771a4240b6138b5911b2013ab7933485.bindTooltip(
+                `<div>
+                     Torvean Car Park, Inverness
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9dd81f9c20ce0b19b971c09940b3a5d2 = L.circleMarker(
+                [57.716972, -5.683454],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_25dd7cf412685d83710ccfd96fa8a40f = L.popup({"maxWidth": 380});
+
+        
+            var html_71b4fd1c5c9544d0e9c10d1d06844f24 = $(`<div id="html_71b4fd1c5c9544d0e9c10d1d06844f24" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Gairloch Beach Car Park       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">21</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">0</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">0</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.375758257</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.716972 | Lon: -5.683454       </div>     </div>     </div>`)[0];
+            popup_25dd7cf412685d83710ccfd96fa8a40f.setContent(html_71b4fd1c5c9544d0e9c10d1d06844f24);
+        
+
+        circle_marker_9dd81f9c20ce0b19b971c09940b3a5d2.bindPopup(popup_25dd7cf412685d83710ccfd96fa8a40f)
+        ;
+
+        
+    
+    
+            circle_marker_9dd81f9c20ce0b19b971c09940b3a5d2.bindTooltip(
+                `<div>
+                     Gairloch Beach Car Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6498cd0d88bbca72c2496d025e1f5825 = L.circleMarker(
+                [57.146711, -2.22182],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_7da5da58eb737f67701c6c1cbe795777 = L.popup({"maxWidth": 380});
+
+        
+            var html_24c2f308abfbfa7d51e328d3787d972e = $(`<div id="html_24c2f308abfbfa7d51e328d3787d972e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Prime Four Business Park       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">22</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">447</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">1831</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.52879527</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-1.755855806</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-0.599984882</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.146711 | Lon: -2.22182       </div>     </div>     </div>`)[0];
+            popup_7da5da58eb737f67701c6c1cbe795777.setContent(html_24c2f308abfbfa7d51e328d3787d972e);
+        
+
+        circle_marker_6498cd0d88bbca72c2496d025e1f5825.bindPopup(popup_7da5da58eb737f67701c6c1cbe795777)
+        ;
+
+        
+    
+    
+            circle_marker_6498cd0d88bbca72c2496d025e1f5825.bindTooltip(
+                `<div>
+                     Prime Four Business Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0f44b35ef56cb48f770a473604e3f185 = L.circleMarker(
+                [57.149264, -2.078125],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_40cf5c7dc4dee96f0c3235069b7463a7 = L.popup({"maxWidth": 380});
+
+        
+            var html_9b01f5210508bfa3dc28a7e17058b0da = $(`<div id="html_9b01f5210508bfa3dc28a7e17058b0da" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Eastern hub - Queens Links - Beach Esplanade       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">23</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">964</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">2611</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.814658566</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.44610389</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.149264 | Lon: -2.078125       </div>     </div>     </div>`)[0];
+            popup_40cf5c7dc4dee96f0c3235069b7463a7.setContent(html_9b01f5210508bfa3dc28a7e17058b0da);
+        
+
+        circle_marker_0f44b35ef56cb48f770a473604e3f185.bindPopup(popup_40cf5c7dc4dee96f0c3235069b7463a7)
+        ;
+
+        
+    
+    
+            circle_marker_0f44b35ef56cb48f770a473604e3f185.bindTooltip(
+                `<div>
+                     Eastern hub - Queens Links - Beach Esplanade
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7efb203f73ce8fcb8e1ef55cb08cf2c6 = L.circleMarker(
+                [57.107692, -2.090465],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_04d82a4bb610490ba699eeb5c1dbe853 = L.popup({"maxWidth": 380});
+
+        
+            var html_90111e4573a43775f02017379c99a0da = $(`<div id="html_90111e4573a43775f02017379c99a0da" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Southern Hub - ACHES on Langdykes Road       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">24</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1745</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">3432</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.25749674</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-1.635184174</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.107692 | Lon: -2.090465       </div>     </div>     </div>`)[0];
+            popup_04d82a4bb610490ba699eeb5c1dbe853.setContent(html_90111e4573a43775f02017379c99a0da);
+        
+
+        circle_marker_7efb203f73ce8fcb8e1ef55cb08cf2c6.bindPopup(popup_04d82a4bb610490ba699eeb5c1dbe853)
+        ;
+
+        
+    
+    
+            circle_marker_7efb203f73ce8fcb8e1ef55cb08cf2c6.bindTooltip(
+                `<div>
+                     Southern Hub - ACHES on Langdykes Road
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1ecafd55ce0b4a31a38ee04baae5c828 = L.circleMarker(
+                [57.184534, -2.08975],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_0fff7065ad4a7c65a9e69b150377e4f2 = L.popup({"maxWidth": 380});
+
+        
+            var html_faf6c5fbd72ad3d4f9bc22675698a8c9 = $(`<div id="html_faf6c5fbd72ad3d4f9bc22675698a8c9" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         North Eastern Hub - Bridge of Don Park and Ride       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">25</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">574</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">1813</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">0.994575675</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.830542154</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-1.454794681</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.184534 | Lon: -2.08975       </div>     </div>     </div>`)[0];
+            popup_0fff7065ad4a7c65a9e69b150377e4f2.setContent(html_faf6c5fbd72ad3d4f9bc22675698a8c9);
+        
+
+        circle_marker_1ecafd55ce0b4a31a38ee04baae5c828.bindPopup(popup_0fff7065ad4a7c65a9e69b150377e4f2)
+        ;
+
+        
+    
+    
+            circle_marker_1ecafd55ce0b4a31a38ee04baae5c828.bindTooltip(
+                `<div>
+                     North Eastern Hub - Bridge of Don Park and Ride
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4dbdbed92764ec2c1baef467f8a1141a = L.circleMarker(
+                [57.188767, -2.19078],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_97abb43c70385380770bc7436e122c47 = L.popup({"maxWidth": 380});
+
+        
+            var html_61c4b8f83b8e7f0fc3157c676fbff5f0 = $(`<div id="html_61c4b8f83b8e7f0fc3157c676fbff5f0" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         TECA       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">26</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">3305</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">2012</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.928218753</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-1.387188143</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.188767 | Lon: -2.19078       </div>     </div>     </div>`)[0];
+            popup_97abb43c70385380770bc7436e122c47.setContent(html_61c4b8f83b8e7f0fc3157c676fbff5f0);
+        
+
+        circle_marker_4dbdbed92764ec2c1baef467f8a1141a.bindPopup(popup_97abb43c70385380770bc7436e122c47)
+        ;
+
+        
+    
+    
+            circle_marker_4dbdbed92764ec2c1baef467f8a1141a.bindTooltip(
+                `<div>
+                     TECA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f95ebbb51b67104adc79f657f4ef58b7 = L.circleMarker(
+                [56.820992, -5.098971],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_a0af32d43c9c2ac7279a2e196476f237 = L.popup({"maxWidth": 380});
+
+        
+            var html_78f10ab9c81cd79535e7677f80a0e2c6 = $(`<div id="html_78f10ab9c81cd79535e7677f80a0e2c6" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Lochaber Leisure Centre       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">27</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">277</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">66</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.401873811</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.164580072</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-1.033655415</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 56.820992 | Lon: -5.098971       </div>     </div>     </div>`)[0];
+            popup_a0af32d43c9c2ac7279a2e196476f237.setContent(html_78f10ab9c81cd79535e7677f80a0e2c6);
+        
+
+        circle_marker_f95ebbb51b67104adc79f657f4ef58b7.bindPopup(popup_a0af32d43c9c2ac7279a2e196476f237)
+        ;
+
+        
+    
+    
+            circle_marker_f95ebbb51b67104adc79f657f4ef58b7.bindTooltip(
+                `<div>
+                     Lochaber Leisure Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cf60b9040034fa7dbffdb7507b99c951 = L.circleMarker(
+                [57.064248, -5.895512],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_f7916d983cf89e8c1869f2f53f24a97e = L.popup({"maxWidth": 380});
+
+        
+            var html_28bde1ecbba69e4b105c782db07379be = $(`<div id="html_28bde1ecbba69e4b105c782db07379be" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Armadale Ferry terminal       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">28</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">0</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">0</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.490528966</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.940742661</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.064248 | Lon: -5.895512       </div>     </div>     </div>`)[0];
+            popup_f7916d983cf89e8c1869f2f53f24a97e.setContent(html_28bde1ecbba69e4b105c782db07379be);
+        
+
+        circle_marker_cf60b9040034fa7dbffdb7507b99c951.bindPopup(popup_f7916d983cf89e8c1869f2f53f24a97e)
+        ;
+
+        
+    
+    
+            circle_marker_cf60b9040034fa7dbffdb7507b99c951.bindTooltip(
+                `<div>
+                     Armadale Ferry terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_67862c7af7583172faa0007395a84c8a = L.circleMarker(
+                [57.073045, -2.134678],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_5306f288fe621c3020638eabeb667629 = L.popup({"maxWidth": 380});
+
+        
+            var html_b8371ad2adde72386cf6d905a4dd3bed = $(`<div id="html_b8371ad2adde72386cf6d905a4dd3bed" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Portlethen New Mobility Hub       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">29</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">3729</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">952</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.669437586</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.073045 | Lon: -2.134678       </div>     </div>     </div>`)[0];
+            popup_5306f288fe621c3020638eabeb667629.setContent(html_b8371ad2adde72386cf6d905a4dd3bed);
+        
+
+        circle_marker_67862c7af7583172faa0007395a84c8a.bindPopup(popup_5306f288fe621c3020638eabeb667629)
+        ;
+
+        
+    
+    
+            circle_marker_67862c7af7583172faa0007395a84c8a.bindTooltip(
+                `<div>
+                     Portlethen New Mobility Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b956e66acd9025e004bb46f494dab836 = L.circleMarker(
+                [57.218, -2.069318],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_942ec1824cc374110a0c9a77580a88f6 = L.popup({"maxWidth": 380});
+
+        
+            var html_5e6a7b391f4fac638db58ce0d6902520 = $(`<div id="html_5e6a7b391f4fac638db58ce0d6902520" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Blackdog New Mobility Hub       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">30</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">725</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">125</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-1.444893248</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.218 | Lon: -2.069318       </div>     </div>     </div>`)[0];
+            popup_942ec1824cc374110a0c9a77580a88f6.setContent(html_5e6a7b391f4fac638db58ce0d6902520);
+        
+
+        circle_marker_b956e66acd9025e004bb46f494dab836.bindPopup(popup_942ec1824cc374110a0c9a77580a88f6)
+        ;
+
+        
+    
+    
+            circle_marker_b956e66acd9025e004bb46f494dab836.bindTooltip(
+                `<div>
+                     Blackdog New Mobility Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f66a3262f11efe44b417489dec170a61 = L.circleMarker(
+                [57.155616, -2.27693],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_7520c4188c7a5b54f8e7219c3f345bfc = L.popup({"maxWidth": 380});
+
+        
+            var html_df5906096f66d9dfaf6ed3303948737c = $(`<div id="html_df5906096f66d9dfaf6ed3303948737c" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Westhill New Mobility Hub       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">31</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">2921</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">1870</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.743134372</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-0.615088929</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.155616 | Lon: -2.27693       </div>     </div>     </div>`)[0];
+            popup_7520c4188c7a5b54f8e7219c3f345bfc.setContent(html_df5906096f66d9dfaf6ed3303948737c);
+        
+
+        circle_marker_f66a3262f11efe44b417489dec170a61.bindPopup(popup_7520c4188c7a5b54f8e7219c3f345bfc)
+        ;
+
+        
+    
+    
+            circle_marker_f66a3262f11efe44b417489dec170a61.bindTooltip(
+                `<div>
+                     Westhill New Mobility Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d90d42d7e82c735c9059833ac3f3172c = L.circleMarker(
+                [57.155642, -2.276852],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_0fe189b1b493ad7e07d76bb1f1db5955 = L.popup({"maxWidth": 380});
+
+        
+            var html_22e8a5e0046561ce7c4846a3fb551a06 = $(`<div id="html_22e8a5e0046561ce7c4846a3fb551a06" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Westhill       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">32</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">2923</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">1912</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.768260284</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-0.599558814</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.155642 | Lon: -2.276852       </div>     </div>     </div>`)[0];
+            popup_0fe189b1b493ad7e07d76bb1f1db5955.setContent(html_22e8a5e0046561ce7c4846a3fb551a06);
+        
+
+        circle_marker_d90d42d7e82c735c9059833ac3f3172c.bindPopup(popup_0fe189b1b493ad7e07d76bb1f1db5955)
+        ;
+
+        
+    
+    
+            circle_marker_d90d42d7e82c735c9059833ac3f3172c.bindTooltip(
+                `<div>
+                     Westhill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c73f43d7b246caab747451e3762b929f = L.circleMarker(
+                [57.109771, -2.09516],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_a997f816eb3c4ff0b3147564c466fd28 = L.popup({"maxWidth": 380});
+
+        
+            var html_423978c8fb8795c634c2d58c2dfd9251 = $(`<div id="html_423978c8fb8795c634c2d58c2dfd9251" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Altens       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">33</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1303</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">3076</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.522902562</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.112525083</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-1.363858986</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.109771 | Lon: -2.09516       </div>     </div>     </div>`)[0];
+            popup_a997f816eb3c4ff0b3147564c466fd28.setContent(html_423978c8fb8795c634c2d58c2dfd9251);
+        
+
+        circle_marker_c73f43d7b246caab747451e3762b929f.bindPopup(popup_a997f816eb3c4ff0b3147564c466fd28)
+        ;
+
+        
+    
+    
+            circle_marker_c73f43d7b246caab747451e3762b929f.bindTooltip(
+                `<div>
+                     Altens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_29334a65ffdd101980733367117bc9bc = L.circleMarker(
+                [57.473541, -4.230476],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_549c0fe70a9b8af4f787798d18853d7c = L.popup({"maxWidth": 380});
+
+        
+            var html_24afde16b45e23e1293e6620c49734fb = $(`<div id="html_24afde16b45e23e1293e6620c49734fb" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Northern Meeting Park, Inverness       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">34</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1254</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">900</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.55733782</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-1.480618579</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.473541 | Lon: -4.230476       </div>     </div>     </div>`)[0];
+            popup_549c0fe70a9b8af4f787798d18853d7c.setContent(html_24afde16b45e23e1293e6620c49734fb);
+        
+
+        circle_marker_29334a65ffdd101980733367117bc9bc.bindPopup(popup_549c0fe70a9b8af4f787798d18853d7c)
+        ;
+
+        
+    
+    
+            circle_marker_29334a65ffdd101980733367117bc9bc.bindTooltip(
+                `<div>
+                     Northern Meeting Park, Inverness
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c2d6703bc4aeb8fecd0191a29990071 = L.circleMarker(
+                [57.497039, -1.796476],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_3ac84ab3b9e08473ea5bcbd9d4ff769f = L.popup({"maxWidth": 380});
+
+        
+            var html_3cfc98988bfdb3f9aadc042bfd944ed9 = $(`<div id="html_3cfc98988bfdb3f9aadc042bfd944ed9" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Lido Peterhead       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">35</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1018</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">180</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">1.14556062</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-1.156098728</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-1.066340345</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.497039 | Lon: -1.796476       </div>     </div>     </div>`)[0];
+            popup_3ac84ab3b9e08473ea5bcbd9d4ff769f.setContent(html_3cfc98988bfdb3f9aadc042bfd944ed9);
+        
+
+        circle_marker_3c2d6703bc4aeb8fecd0191a29990071.bindPopup(popup_3ac84ab3b9e08473ea5bcbd9d4ff769f)
+        ;
+
+        
+    
+    
+            circle_marker_3c2d6703bc4aeb8fecd0191a29990071.bindTooltip(
+                `<div>
+                     Lido Peterhead
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0ce0a89b2dcb7605c2b6ebe4d80b031d = L.circleMarker(
+                [57.154068, -2.136839],
+                {"bubblingMouseEvents": true, "color": "#f1c40f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_b76dd1fe4dda6dc78df71def2c7ff5b2 = L.popup({"maxWidth": 380});
+
+        
+            var html_dbfd38b9f65358d76c80032639eb8ec1 = $(`<div id="html_dbfd38b9f65358d76c80032639eb8ec1" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#f1c40f;margin-bottom:8px;">         Aberseen Royal Infirmary       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Medium</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#f1c40f;">36</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">981</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">2466</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.687260595</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-1.21590016</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-2.638311982</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.154068 | Lon: -2.136839       </div>     </div>     </div>`)[0];
+            popup_b76dd1fe4dda6dc78df71def2c7ff5b2.setContent(html_dbfd38b9f65358d76c80032639eb8ec1);
+        
+
+        circle_marker_0ce0a89b2dcb7605c2b6ebe4d80b031d.bindPopup(popup_b76dd1fe4dda6dc78df71def2c7ff5b2)
+        ;
+
+        
+    
+    
+            circle_marker_0ce0a89b2dcb7605c2b6ebe4d80b031d.bindTooltip(
+                `<div>
+                     Aberseen Royal Infirmary
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9d6a5ec45166383a8a413380703a6576 = L.circleMarker(
+                [57.150117, -2.223399],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_ae6dec456a18c4c17cb66487a7dfa7e4 = L.popup({"maxWidth": 380});
+
+        
+            var html_dc3223fc1719ad95f9d85cb1c7537f04 = $(`<div id="html_dc3223fc1719ad95f9d85cb1c7537f04" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Western hub - Upscale Kingswells Park and Ride provision       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">37</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">2860</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">2460</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.827066352</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.649184486</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-1.266561078</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.150117 | Lon: -2.223399       </div>     </div>     </div>`)[0];
+            popup_ae6dec456a18c4c17cb66487a7dfa7e4.setContent(html_dc3223fc1719ad95f9d85cb1c7537f04);
+        
+
+        circle_marker_9d6a5ec45166383a8a413380703a6576.bindPopup(popup_ae6dec456a18c4c17cb66487a7dfa7e4)
+        ;
+
+        
+    
+    
+            circle_marker_9d6a5ec45166383a8a413380703a6576.bindTooltip(
+                `<div>
+                     Western hub - Upscale Kingswells Park and Ride provision
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fcbb6a281025eb4a8f39e691c4ce7f46 = L.circleMarker(
+                [57.005788, -3.400155],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_71c8520411a9e7712d289a209dc7a8f4 = L.popup({"maxWidth": 380});
+
+        
+            var html_f0d0d8d5bcc2575b6075ba664a7dfcc0 = $(`<div id="html_f0d0d8d5bcc2575b6075ba664a7dfcc0" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Braemar       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">38</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">0</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">0</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.219274411</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-0.588084328</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.005788 | Lon: -3.400155       </div>     </div>     </div>`)[0];
+            popup_71c8520411a9e7712d289a209dc7a8f4.setContent(html_f0d0d8d5bcc2575b6075ba664a7dfcc0);
+        
+
+        circle_marker_fcbb6a281025eb4a8f39e691c4ce7f46.bindPopup(popup_71c8520411a9e7712d289a209dc7a8f4)
+        ;
+
+        
+    
+    
+            circle_marker_fcbb6a281025eb4a8f39e691c4ce7f46.bindTooltip(
+                `<div>
+                     Braemar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_022a6828ffb320a88e915cf56c4ae307 = L.circleMarker(
+                [57.199621, -2.207034],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_cfb713d28646d06cf8383b10743f7295 = L.popup({"maxWidth": 380});
+
+        
+            var html_b066975a5a0e971c0ca09d472c9311f8 = $(`<div id="html_b066975a5a0e971c0ca09d472c9311f8" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Aberdeen Airport       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">39</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">889</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">982</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.798463076</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-1.937797518</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.154231286</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.199621 | Lon: -2.207034       </div>     </div>     </div>`)[0];
+            popup_cfb713d28646d06cf8383b10743f7295.setContent(html_b066975a5a0e971c0ca09d472c9311f8);
+        
+
+        circle_marker_022a6828ffb320a88e915cf56c4ae307.bindPopup(popup_cfb713d28646d06cf8383b10743f7295)
+        ;
+
+        
+    
+    
+            circle_marker_022a6828ffb320a88e915cf56c4ae307.bindTooltip(
+                `<div>
+                     Aberdeen Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_65a331fb019790e2767470e444b0ab9f = L.circleMarker(
+                [56.966737, -2.225381],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_73e335636d61288a6942caa2b6108e32 = L.popup({"maxWidth": 380});
+
+        
+            var html_8017e37dd7cf9b78129cd0e94a91a4fc = $(`<div id="html_8017e37dd7cf9b78129cd0e94a91a4fc" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Stonehaven       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">40</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">4931</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">268</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.846009892</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.235588962</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-0.911498777</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 56.966737 | Lon: -2.225381       </div>     </div>     </div>`)[0];
+            popup_73e335636d61288a6942caa2b6108e32.setContent(html_8017e37dd7cf9b78129cd0e94a91a4fc);
+        
+
+        circle_marker_65a331fb019790e2767470e444b0ab9f.bindPopup(popup_73e335636d61288a6942caa2b6108e32)
+        ;
+
+        
+    
+    
+            circle_marker_65a331fb019790e2767470e444b0ab9f.bindTooltip(
+                `<div>
+                     Stonehaven
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eb032ef2cd8a9ebe5a14314e805b18b1 = L.circleMarker(
+                [57.462849, -4.234783],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_3367a8fab16d5881d01c7bbfcb62bb20 = L.popup({"maxWidth": 380});
+
+        
+            var html_d4483532baeddc714c5abfbbb5953845 = $(`<div id="html_d4483532baeddc714c5abfbbb5953845" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Bught Road Parking (outside BMX Park)       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">41</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1125</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">827</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-1.03770807</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.566948712</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.462849 | Lon: -4.234783       </div>     </div>     </div>`)[0];
+            popup_3367a8fab16d5881d01c7bbfcb62bb20.setContent(html_d4483532baeddc714c5abfbbb5953845);
+        
+
+        circle_marker_eb032ef2cd8a9ebe5a14314e805b18b1.bindPopup(popup_3367a8fab16d5881d01c7bbfcb62bb20)
+        ;
+
+        
+    
+    
+            circle_marker_eb032ef2cd8a9ebe5a14314e805b18b1.bindTooltip(
+                `<div>
+                     Bught Road Parking (outside BMX Park)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a525d283fa7b3be776a1a259f31f39de = L.circleMarker(
+                [57.254035, -2.041978],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_2de8822b3bcf5ed51fdb3368a3b3541f = L.popup({"maxWidth": 380});
+
+        
+            var html_95599ddd20e49bbae06c6ba0cc7640f1 = $(`<div id="html_95599ddd20e49bbae06c6ba0cc7640f1" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Balmedie Country Park       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">42</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">368</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">75</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-1.444893248</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.093301086</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.254035 | Lon: -2.041978       </div>     </div>     </div>`)[0];
+            popup_2de8822b3bcf5ed51fdb3368a3b3541f.setContent(html_95599ddd20e49bbae06c6ba0cc7640f1);
+        
+
+        circle_marker_a525d283fa7b3be776a1a259f31f39de.bindPopup(popup_2de8822b3bcf5ed51fdb3368a3b3541f)
+        ;
+
+        
+    
+    
+            circle_marker_a525d283fa7b3be776a1a259f31f39de.bindTooltip(
+                `<div>
+                     Balmedie Country Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c64ab0782d987f9d11a77e6ddc838274 = L.circleMarker(
+                [57.249934, -4.49012],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_907e706f80bf7d59869f1ecb0a153ea6 = L.popup({"maxWidth": 380});
+
+        
+            var html_376b73a27e37deae1ba8c3930a3d86a2 = $(`<div id="html_376b73a27e37deae1ba8c3930a3d86a2" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Fall of Foyers Car Park       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">43</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">604</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">21</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">0.361732082</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.848888853</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.249934 | Lon: -4.49012       </div>     </div>     </div>`)[0];
+            popup_907e706f80bf7d59869f1ecb0a153ea6.setContent(html_376b73a27e37deae1ba8c3930a3d86a2);
+        
+
+        circle_marker_c64ab0782d987f9d11a77e6ddc838274.bindPopup(popup_907e706f80bf7d59869f1ecb0a153ea6)
+        ;
+
+        
+    
+    
+            circle_marker_c64ab0782d987f9d11a77e6ddc838274.bindTooltip(
+                `<div>
+                     Fall of Foyers Car Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e23111a06e59fe53e88980c246a9546 = L.circleMarker(
+                [57.149873, -2.223123],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_2f184c7a6e8adffa4a9aca6c80baaa1d = L.popup({"maxWidth": 380});
+
+        
+            var html_c91492321d3977974a1051bf863d6a5e = $(`<div id="html_c91492321d3977974a1051bf863d6a5e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Kingswell Park and Ride       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeen City</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">44</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1168</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">4054</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.84680269</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.80609702</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-1.371985841</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.149873 | Lon: -2.223123       </div>     </div>     </div>`)[0];
+            popup_2f184c7a6e8adffa4a9aca6c80baaa1d.setContent(html_c91492321d3977974a1051bf863d6a5e);
+        
+
+        circle_marker_2e23111a06e59fe53e88980c246a9546.bindPopup(popup_2f184c7a6e8adffa4a9aca6c80baaa1d)
+        ;
+
+        
+    
+    
+            circle_marker_2e23111a06e59fe53e88980c246a9546.bindTooltip(
+                `<div>
+                     Kingswell Park and Ride
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cf61baaf2cab93ae6b114d2cb08a436c = L.circleMarker(
+                [57.285251, -2.376118],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_51bdaf58bc02ba2928071ad33cbe7635 = L.popup({"maxWidth": 380});
+
+        
+            var html_4524936d0ff2c3227adae0ff6dd8ec37 = $(`<div id="html_4524936d0ff2c3227adae0ff6dd8ec37" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Burn Lane, Inverurie       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">45</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">994</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">2384</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.380756641</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">0.919311387</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-2.209931247</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.285251 | Lon: -2.376118       </div>     </div>     </div>`)[0];
+            popup_51bdaf58bc02ba2928071ad33cbe7635.setContent(html_4524936d0ff2c3227adae0ff6dd8ec37);
+        
+
+        circle_marker_cf61baaf2cab93ae6b114d2cb08a436c.bindPopup(popup_51bdaf58bc02ba2928071ad33cbe7635)
+        ;
+
+        
+    
+    
+            circle_marker_cf61baaf2cab93ae6b114d2cb08a436c.bindTooltip(
+                `<div>
+                     Burn Lane, Inverurie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_34738905d177c9e1721bba04e6823768 = L.circleMarker(
+                [57.285326, -2.395972],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_0aa1d61c0b5e8b97bc890850d3252adf = L.popup({"maxWidth": 380});
+
+        
+            var html_2681fd79441bec4493430ab4e595e876 = $(`<div id="html_2681fd79441bec4493430ab4e595e876" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Inverurie       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">46</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1801</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">276</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.103535838</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.126972085</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">-0.556986518</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.285326 | Lon: -2.395972       </div>     </div>     </div>`)[0];
+            popup_0aa1d61c0b5e8b97bc890850d3252adf.setContent(html_2681fd79441bec4493430ab4e595e876);
+        
+
+        circle_marker_34738905d177c9e1721bba04e6823768.bindPopup(popup_0aa1d61c0b5e8b97bc890850d3252adf)
+        ;
+
+        
+    
+    
+            circle_marker_34738905d177c9e1721bba04e6823768.bindTooltip(
+                `<div>
+                     Inverurie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_757d05f5672d389cfc33a7ff86e48787 = L.circleMarker(
+                [57.520774, -2.028913],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_a0a71cbedec7446ef67cc44494c09e0a = L.popup({"maxWidth": 380});
+
+        
+            var html_37a349c88a3048bbbee1972cd52b6409 = $(`<div id="html_37a349c88a3048bbbee1972cd52b6409" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Aden Country Park       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">47</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">1521</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">400</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-1.444893248</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.715348567</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.520774 | Lon: -2.028913       </div>     </div>     </div>`)[0];
+            popup_a0a71cbedec7446ef67cc44494c09e0a.setContent(html_37a349c88a3048bbbee1972cd52b6409);
+        
+
+        circle_marker_757d05f5672d389cfc33a7ff86e48787.bindPopup(popup_a0a71cbedec7446ef67cc44494c09e0a)
+        ;
+
+        
+    
+    
+            circle_marker_757d05f5672d389cfc33a7ff86e48787.bindTooltip(
+                `<div>
+                     Aden Country Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec8473d3479c78acbf29fec52a8b9d1f = L.circleMarker(
+                [57.625782, -3.570728],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_dd87e7656864a00800fb3342577c0ac4 = L.popup({"maxWidth": 380});
+
+        
+            var html_fd8f6690ec13bb5b5ffd9ed88059b6c9 = $(`<div id="html_fd8f6690ec13bb5b5ffd9ed88059b6c9" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Futures sites associated with the Moray Growth Deal       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Moray</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">48</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">0</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">0</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-1.444893248</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.700334265</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.625782 | Lon: -3.570728       </div>     </div>     </div>`)[0];
+            popup_dd87e7656864a00800fb3342577c0ac4.setContent(html_fd8f6690ec13bb5b5ffd9ed88059b6c9);
+        
+
+        circle_marker_ec8473d3479c78acbf29fec52a8b9d1f.bindPopup(popup_dd87e7656864a00800fb3342577c0ac4)
+        ;
+
+        
+    
+    
+            circle_marker_ec8473d3479c78acbf29fec52a8b9d1f.bindTooltip(
+                `<div>
+                     Futures sites associated with the Moray Growth Deal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bece88d7c6d184c2d8bf66a0f188b8f3 = L.circleMarker(
+                [56.81076, -5.076858],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_c5768b71325ca0f46a21fdb9292ff532 = L.popup({"maxWidth": 380});
+
+        
+            var html_a56262b6ff7bcbb206a74ba2eb522828 = $(`<div id="html_a56262b6ff7bcbb206a74ba2eb522828" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Ben Nevis Visitor Centre       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">49</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">369</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">274</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-0.650379195</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.095248269</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 56.81076 | Lon: -5.076858       </div>     </div>     </div>`)[0];
+            popup_c5768b71325ca0f46a21fdb9292ff532.setContent(html_a56262b6ff7bcbb206a74ba2eb522828);
+        
+
+        circle_marker_bece88d7c6d184c2d8bf66a0f188b8f3.bindPopup(popup_c5768b71325ca0f46a21fdb9292ff532)
+        ;
+
+        
+    
+    
+            circle_marker_bece88d7c6d184c2d8bf66a0f188b8f3.bindTooltip(
+                `<div>
+                     Ben Nevis Visitor Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_116995ec52235acd0736ed4e38d95415 = L.circleMarker(
+                [57.145527, -6.107244],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_23181733bb332c198ae89ec5bb0c4fa5 = L.popup({"maxWidth": 380});
+
+        
+            var html_52c064f7788c7537d8ae6e64d6a1cbc5 = $(`<div id="html_52c064f7788c7537d8ae6e64d6a1cbc5" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Elgol Village Harbour Car Park or Outside the Village Shop       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">50</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">0</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">0</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-1.022660881</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.562284654</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.145527 | Lon: -6.107244       </div>     </div>     </div>`)[0];
+            popup_23181733bb332c198ae89ec5bb0c4fa5.setContent(html_52c064f7788c7537d8ae6e64d6a1cbc5);
+        
+
+        circle_marker_116995ec52235acd0736ed4e38d95415.bindPopup(popup_23181733bb332c198ae89ec5bb0c4fa5)
+        ;
+
+        
+    
+    
+            circle_marker_116995ec52235acd0736ed4e38d95415.bindTooltip(
+                `<div>
+                     Elgol Village Harbour Car Park or Outside the Village Shop
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad9347899046c5ae45c336cde3d3988e = L.circleMarker(
+                [57.239501, -2.696864],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_d38f8a290b25c4c3768e85fab4d60253 = L.popup({"maxWidth": 380});
+
+        
+            var html_805fa0b62584a220a88cd51e260854ba = $(`<div id="html_805fa0b62584a220a88cd51e260854ba" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Haughton Country Park       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Aberdeenshire</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">51</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">215</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">39</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-1.302735985</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-1.559644309</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.670416743</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.239501 | Lon: -2.696864       </div>     </div>     </div>`)[0];
+            popup_d38f8a290b25c4c3768e85fab4d60253.setContent(html_805fa0b62584a220a88cd51e260854ba);
+        
+
+        circle_marker_ad9347899046c5ae45c336cde3d3988e.bindPopup(popup_d38f8a290b25c4c3768e85fab4d60253)
+        ;
+
+        
+    
+    
+            circle_marker_ad9347899046c5ae45c336cde3d3988e.bindTooltip(
+                `<div>
+                     Haughton Country Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_237905c1ab2b71d15a80cf5201c96cd8 = L.circleMarker(
+                [57.591479, -3.861239],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_081715503c6c88eded39e07e912780b5 = L.popup({"maxWidth": 380});
+
+        
+            var html_fc6305dd2b6afb22c477f2c094aa2380 = $(`<div id="html_fc6305dd2b6afb22c477f2c094aa2380" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Nairn Harbour Car Park       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">52</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">951</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">149</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-1.108858839</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-1.335437238</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.591479 | Lon: -3.861239       </div>     </div>     </div>`)[0];
+            popup_081715503c6c88eded39e07e912780b5.setContent(html_fc6305dd2b6afb22c477f2c094aa2380);
+        
+
+        circle_marker_237905c1ab2b71d15a80cf5201c96cd8.bindPopup(popup_081715503c6c88eded39e07e912780b5)
+        ;
+
+        
+    
+    
+            circle_marker_237905c1ab2b71d15a80cf5201c96cd8.bindTooltip(
+                `<div>
+                     Nairn Harbour Car Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d422f157d933d78482ba276ba0ccc44 = L.circleMarker(
+                [57.350214, -6.082257],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e0fe7d095b2849613420466d1bd08e2b);
+        
+    
+        var popup_0beea1ac33c2e2ed6e46f9ee1afb7f74 = L.popup({"maxWidth": 380});
+
+        
+            var html_66ef0eca1f0108d788bc6e5bd98cd43d = $(`<div id="html_66ef0eca1f0108d788bc6e5bd98cd43d" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Segoe UI, Arial; font-size:13px; min-width:340px; max-width:360px;">       <div style="font-size:16px;font-weight:700;color:#e74c3c;margin-bottom:8px;">         Raasay Ferry Terminal       </div>       <table style="width:100%; border-collapse:collapse;">         <tr><td style="padding:4px 6px;color:#555;">Local Authority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Highland</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Priority</td><td style="padding:4px 6px;text-align:right;font-weight:600;">Low</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Rank</td><td style="padding:4px 6px;text-align:right;font-weight:700;color:#e74c3c;">53</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Catchment Passersby</td><td style="padding:4px 6px;text-align:right;">601</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Local Passersby</td><td style="padding:4px 6px;text-align:right;">14</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Accessibility</td><td style="padding:4px 6px;text-align:right;">-1.444893248</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Infrastructure</td><td style="padding:4px 6px;text-align:right;">-0.649531098</td></tr>         <tr><td style="padding:4px 6px;color:#555;">Competition</td><td style="padding:4px 6px;text-align:right;">0.922859268</td></tr>       </table>       <div style="margin-top:8px;font-size:11px;color:#777;border-top:1px solid #eee;padding-top:4px;">         Lat: 57.350214 | Lon: -6.082257       </div>     </div>     </div>`)[0];
+            popup_0beea1ac33c2e2ed6e46f9ee1afb7f74.setContent(html_66ef0eca1f0108d788bc6e5bd98cd43d);
+        
+
+        circle_marker_5d422f157d933d78482ba276ba0ccc44.bindPopup(popup_0beea1ac33c2e2ed6e46f9ee1afb7f74)
+        ;
+
+        
+    
+    
+            circle_marker_5d422f157d933d78482ba276ba0ccc44.bindTooltip(
+                `<div>
+                     Raasay Ferry Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
